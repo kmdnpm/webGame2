@@ -38,8 +38,33 @@ function newInventory() {
 }
 
 function moveCharacter() {
+    const character = newImage('assets/green-character/static.gif')
+    let direction = null;
+    let x = 100;
+    let y = 250;
 
+    if (direction === 'west') {
+        x = x - 1;
+    }
+
+    if (direction === 'north') {
+        y = y + 1;
+    }
+
+    if (direction === 'south') {
+        y = y - 1;
+    }
+
+    if (direction === 'east') {
+        x = x + 1;
+    }
+    character.style.left = x + 'px';
+    character.style.bottom = y + 'px'
+
+    move(character).to(100, 250)
 }
+
+setInterval(moveCharacter, 1)
 
 function index() {
 
