@@ -37,6 +37,13 @@ function newInventory() {
     document.body.append(inventory)
 }
 
+function moveCharacter() {
+
+}
+
+function index() {
+
+}
 newInventory()
 newImage('assets/green-character.gif', 100, 250)
 newImage('assets/tree.png', 200, 450)
